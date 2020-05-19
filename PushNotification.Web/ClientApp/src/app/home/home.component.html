@@ -1,0 +1,26 @@
+<h1>Teste de envio de notificações!</h1>
+
+<p>
+  <button [disabled]="isRegisteredForPush()"
+          (click)='registerForPush()'>
+    {{!isRegisteredForPush() ? 'Registre-se para receber notificações por push' :'Já registrado'}}
+  </button>
+  <button (click)='removeSubscription()' *ngIf='isRegisteredForPush()'>Remover assinatura</button>
+</p>
+<p>
+  <input type="text" #title placeholder="Title">
+  <input type="text" #body placeholder="Body">
+  <button (click)="sendNotification(title.value,body.value)">Enviar notificação</button><br>
+  <button (click)="sendNotificationWithDelay(title.value,body.value)">
+Enviar notificação e abrir uma nova guia</button>
+</p>
+<pre class='col-lg-6'>
+    <code *ngFor='let message of messages'>
+      {{message | json}}
+    </code>
+</pre>
+<pre class='col-lg-6'>
+  <code>
+    {{error | json}}
+  </code>
+</pre>
