@@ -1,4 +1,5 @@
 # Push notifications with Angular, DotNet Core and Firebase
-This is a very basic application developed with angular and DotNet core to show how push notifications work using Firebase Cloud Messaging.
 
-For more information visit https://medium.com/@uralmehmet/a2280d18eda1
+Este é um aplicativo muito básico desenvolvido com o núcleo angular e DotNet para mostrar como as notificações por push funcionam usando o Firebase Cloud Messaging.
+
+
